@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class Hit  {
-    public void hit(Character character){
+    public void hit(Character character) {
         int i = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("数値を入力してください。");
@@ -41,9 +41,11 @@ class Hit  {
         String a = Integer.toString(ito);
         String b = Integer.toString(bi);
         System.out.println("結果は" + a + "イート" + b + "バイト");
-        }
-
-
-
+        if (a.equals("3")) {
+            System.out.println(character.player + "の勝利です");
 
         }
+
+
+    }
+}
